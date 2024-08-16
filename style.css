@@ -1,0 +1,333 @@
+.header {
+  background-color: rgb(38, 146, 154);
+  width: 100%;
+  animation-duration: 5s;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+.navbar h1 {
+  color: rgb(26, 11, 11);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  animation: forwards;
+  animation: slideIn;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+h1 {
+  animation: slideIn 1s ease-in-out;
+}
+
+.list ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  gap: 20px;
+  font-size: 30px;
+}
+
+.list ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.list ul li:hover {
+  border: 3px solid peru;
+  color: black;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  background-color: skyblue;
+  width: 100%;
+  height: 400px;
+  animation-name: animate__backInUp;
+  animation-duration: 4s;
+}
+.main p {
+  font-size: 30px;
+  color: rgb(32, 17, 17);
+}
+
+.main img {
+  height: 300px;
+}
+.btn {
+  padding: 5px 3px 5px 3px;
+  border-radius: 10px;
+  width: 150px;
+  border: none;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  animation-name: btn;
+  animation-duration: 5s;
+}
+@keyframes btn {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+button:hover {
+  color: cadetblue;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: green;
+  color: black;
+}
+
+.text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.main-2 {
+  background-color: rgb(13, 110, 125);
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  height: 400px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  animation-name: animate__zoomIn;
+  animation-duration: 4s;
+}
+
+.main-2 h1 {
+  color: darkblue;
+}
+.main-2 .left {
+  animation-name: animate__fadeInBottomLeft;
+  animation-duration: 5s;
+}
+.main-2 .right {
+  animation-name: animate__fadeInBottomLeft;
+  animation-duration: 5s;
+}
+
+.heading {
+  text-align: center;
+  color: black;
+  font-size: 1.4rem;
+}
+.four-divs {
+  display: flex;
+  justify-content: space-between;
+  height: 420px;
+  padding: 10px 5px 5px 5px;
+  animation-name: animate__backInUp;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  position: relative;
+}
+.child-box {
+  background-color: rgb(157, 179, 199);
+  margin: 20px;
+  padding: 10px 2px 10px 2px;
+  border: 2px solid black;
+}
+.child-box:hover {
+  animation-name: animate__rotateOut;
+  animation-duration: 2s;
+  color: black;
+  background-color: cornflowerblue;
+}
+
+.child-box h2 {
+  background-color: rgba(2, 107, 95, 0.49);
+  border: 1px solid;
+  width: 30px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 50%;
+  color: white;
+}
+.child-box p {
+  font-style: italic;
+  font-size: 1.4rem;
+}
+
+.child-box a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+}
+
+.second-div {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  background-color: rgb(26, 81, 148);
+  width: 100%;
+  height: 600px;
+}
+.text-about {
+  margin: 50px;
+}
+.main-2 {
+  background-color: rgb(13, 110, 125);
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  height: 400px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.heading {
+  animation: animate__backInDown;
+  animation: 3s;
+  color: rgb(10, 2, 2);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.heading-2 {
+  text-align: center;
+  animation-name: animate__slideInLeft;
+  animation-duration: 7s;
+}
+.bottom-last h1 p {
+  text-align: center;
+}
+
+.bottom-last h1 {
+  text-align: center;
+}
+.bottom-last img {
+  width: 80%;
+  position: relative;
+  left: 230px;
+}
+
+.eduation {
+  background-color: white;
+}
+.eduation h1,
+p {
+  text-align: center;
+}
+
+.bottom {
+  margin: 30px;
+  text-align: center;
+}
+.bottom h1 {
+  font-size: 1.6rem;
+}
+
+div {
+  animation-name: animate__lightSpeedInRight;
+  animation-duration: 2s;
+  animation-fill-mode: fo;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  animation-name: animate__fadeInUpBig;
+  animation-duration: 6s;
+  animation-direction: alternate;
+}
+
+.section-2 {
+  background-color: rgb(13, 110, 125);
+}
+
+/* Responsive  */
+
+@media (max-width: 768px) {
+  .navbar h1 {
+    font-size: 24px;
+  }
+
+  .list ul {
+    font-size: 24px;
+  }
+
+  .main {
+    height: auto;
+  }
+
+  .main p {
+    font-size: 24px;
+  }
+
+  .btn {
+    width: 120px;
+    font-size: 18px;
+  }
+
+  .main-2 {
+    height: auto;
+  }
+
+  .four-divs {
+    flex-direction: column;
+  }
+
+  .child-box {
+    flex: 1 1 100%;
+  }
+
+  .second-div {
+    height: auto;
+  }
+
+  .text-about {
+    margin: 20px;
+  }
+
+  .bottom-last img {
+    width: 100%;
+    left: 0;
+  }
+
+  .bottom h1 {
+    font-size: 1.2rem;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar h1 {
+    font-size: 20px;
+  }
+
+  .list ul {
+    font-size: 20px;
+  }
+
+  .main p {
+    font-size: 20px;
+  }
+
+  .btn {
+    width: 100px;
+    font-size: 16px;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .bottom h1 {
+    font-size: 1rem;
+  }
+}
